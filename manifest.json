@@ -1,9 +1,9 @@
 {
   "id": "co.bennett.windows-computer-use",
   "name": "Windows Computer Use",
-  "version": "0.1.0-draft",
+  "version": "0.1.0",
   "githubRepo": "b-nnett/codex-plusplus-windows-computer-use",
-  "description": "Draft Windows Computer Use MCP surface for Codex++.",
+  "description": "Windows Computer Use MCP surface for Codex++.",
   "author": {
     "name": "bennett",
     "url": "https://github.com/anomalyco/codex-plusplus"

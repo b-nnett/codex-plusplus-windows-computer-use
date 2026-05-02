@@ -1,8 +1,8 @@
 {
   "name": "co.bennett.windows-computer-use",
-  "version": "0.1.0-draft",
+  "version": "0.1.0",
   "private": true,
-  "description": "Draft Windows Computer Use MCP surface for Codex++.",
+  "description": "Windows Computer Use MCP surface for Codex++.",
   "scripts": {
     "preflight": "node tests/preflight.test.js",
     "install:codexpp:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install-codexpp-windows.ps1",

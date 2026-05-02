@@ -1,6 +1,8 @@
 # Windows Computer Use
 
-Draft Codex++ tweak-plugin for a Windows Computer Use MCP surface.
+Codex++ tweak-plugin for a Windows Computer Use MCP surface.
+
+![Windows Computer Use running a YouTube Music task](docs/windows-computer-use-travis-scott.png)
 
 This mirrors the Native Widgets layout:
 
@@ -11,7 +13,7 @@ This mirrors the Native Widgets layout:
 
 ## Current State
 
-This is intentionally a draft. It advertises a Computer Use-compatible tool surface and can report Windows platform/app discovery state, but UI Automation actions are guarded until the Windows bridge is implemented.
+This provides a Computer Use-compatible MCP surface for Windows desktop automation. It can list visible apps, capture app/window state, dump compact UI Automation targets, screenshot app windows, use app-specific instructions, press keys, type text, set UI values, and send click/drag/scroll events without moving the user's real cursor.
 
 On non-Windows platforms the MCP server still starts and returns diagnostic JSON so development and tests can run from macOS.
 
@@ -36,7 +38,7 @@ On non-Windows platforms the MCP server still starts and returns diagnostic JSON
 - `show_fake_cursor`
 - `hide_fake_cursor`
 
-The tool names intentionally match OpenAI's macOS Computer Use where possible. The `start_computer_use`, `windows_computer_use_status`, and `app_instruction_catalog` tools are extra draft helpers.
+The tool names intentionally match OpenAI's macOS Computer Use where possible. The `start_computer_use`, `windows_computer_use_status`, and `app_instruction_catalog` tools are Windows helper tools for startup UI, diagnostics, and app-specific instruction discovery.
 
 ## Windows Setup
 
@@ -111,14 +113,6 @@ On Windows this will likely be:
 command = "node"
 args = ["C:\\Users\\<you>\\AppData\\Roaming\\codex-plusplus\\tweaks\\co.bennett.windows-computer-use\\mcp-server.js"]
 ```
-
-## Implementation Plan
-
-1. Keep the MCP schema stable and compatible with macOS Computer Use.
-2. Add a native Windows helper for UI Automation tree capture and screenshots.
-3. Implement app approval state, matching the macOS app approval model.
-4. Move action tools from guarded draft responses to real UIA/input calls.
-5. Add per-app instruction files as first-class resources.
 
 ## Tests
 
