@@ -1,0 +1,25 @@
+{
+  "id": "co.bennett.windows-computer-use",
+  "name": "Windows Computer Use",
+  "version": "0.1.0-draft",
+  "githubRepo": "b-nnett/codex-plusplus-windows-computer-use",
+  "description": "Draft Windows Computer Use MCP surface for Codex++.",
+  "author": {
+    "name": "bennett",
+    "url": "https://github.com/anomalyco/codex-plusplus"
+  },
+  "tags": [
+    "mcp",
+    "windows",
+    "computer-use",
+    "automation"
+  ],
+  "scope": "both",
+  "main": "index.js",
+  "mcp": {
+    "command": "node",
+    "args": [
+      "mcp-server.js"
+    ]
+  }
+}

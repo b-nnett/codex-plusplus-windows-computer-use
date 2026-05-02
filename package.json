@@ -1,0 +1,18 @@
+{
+  "name": "co.bennett.windows-computer-use",
+  "version": "0.1.0-draft",
+  "private": true,
+  "description": "Draft Windows Computer Use MCP surface for Codex++.",
+  "scripts": {
+    "preflight": "node tests/preflight.test.js",
+    "install:codexpp:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/install-codexpp-windows.ps1",
+    "setup:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/setup-windows.ps1",
+    "smoke:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/smoke-test-windows.ps1",
+    "calculator:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run-visual-test-task-windows.ps1 -TaskName CodexWCUCalculatorTest -VisualScriptName calculator-test-windows.ps1 -OutDir \"%TEMP%\\wcu-calculator-test\"",
+    "codex-computer:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run-visual-test-task-windows.ps1 -TaskName CodexWCUComputerPromptTest -VisualScriptName codex-computer-prompt-test-windows.ps1 -OutDir \"%TEMP%\\wcu-codex-computer-test\" -TimeoutSeconds 210",
+    "visual-task:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/run-visual-test-task-windows.ps1",
+    "visual:windows": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/visual-test-windows.ps1",
+    "test": "node tests/windows-computer-use.test.js && node tests/preflight.test.js"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,45 @@
+{
+  "name": "computer",
+  "version": "0.1.0",
+  "description": "Windows Computer Use plugin for Codex++.\n\nAliases: @computer, computer, computer use, windows computer use.\n\nUse this plugin whenever the user explicitly mentions @computer or asks Codex to control Windows desktop apps. It should use the Windows Computer Use MCP server supplied by the co.bennett.windows-computer-use Codex++ tweak.",
+  "author": {
+    "name": "Bennett"
+  },
+  "homepage": "https://github.com/b-nnett/codex-plusplus-windows-computer-use",
+  "repository": "https://github.com/b-nnett/codex-plusplus-windows-computer-use",
+  "license": "MIT",
+  "keywords": [
+    "computer",
+    "computer-use",
+    "windows",
+    "desktop-control",
+    "automation",
+    "accessibility",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Computer Use",
+    "shortDescription": "Control Windows apps from Codex",
+    "longDescription": "Windows Computer Use lets Codex inspect and operate visible Windows desktop apps using screenshots, UI Automation target dumps, keyboard and mouse input, and a visible software cursor overlay. It is backed by a Windows-local Codex++ MCP server and does not connect to a remote host.",
+    "developerName": "Bennett",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/b-nnett/codex-plusplus-windows-computer-use",
+    "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/terms-of-use/",
+    "defaultPrompt": [
+      "Open Calculator and compute 2 + 2",
+      "Open YouTube and search for the latest Joe Rogan clips",
+      "List visible Windows apps and dump their buttons"
+    ],
+    "brandColor": "#3B5BDB",
+    "composerIcon": "./assets/app-icon.png",
+    "logo": "./assets/app-icon.png",
+    "screenshots": []
+  }
+}

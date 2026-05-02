@@ -1,0 +1,10 @@
+[
+  {
+    "imageClass" : "__NSCFType",
+    "width" : 200,
+    "height" : 230,
+    "name" : "SoftwareCursor",
+    "file" : "SoftwareCursor.png",
+    "class" : "CUINamedImage"
+  }
+]

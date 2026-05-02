@@ -1,0 +1,18 @@
+[
+  {
+    "imageClass" : "__NSCFType",
+    "width" : 29,
+    "height" : 33,
+    "name" : "HintArrow",
+    "file" : "HintArrow.png",
+    "class" : "CUINamedImage"
+  },
+  {
+    "imageClass" : "__NSCFType",
+    "width" : 200,
+    "height" : 230,
+    "name" : "SoftwareCursor",
+    "file" : "SoftwareCursor.png",
+    "class" : "CUINamedImage"
+  }
+]

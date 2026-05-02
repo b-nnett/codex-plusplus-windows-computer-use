@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+npm-debug.log*
+*.log
+*.tmp
+*.bak
+
+# Windows/visual test output
+wcu-*/
+visual-report.json
+task-output.txt
+task-error.txt
+
